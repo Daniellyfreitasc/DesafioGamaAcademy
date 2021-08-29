@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>JobsNET - Banco de Talentos</title>
+
+</head>
+
+<body>
+    <header>
+             
+            <h1>Recrutamento e Seleção</h1>
+            <img src="Bege_e_Preto_Simples_e_Circular_Casamento_Evento_Logotipo__1_-removebg-preview.png" height="400" width="400" id="logo">
+          
+
+            <h3>CADASTRO - BANCO DE TALENTOS</h3>
+    </header>
+            <br>
+
+            <form  name="formulario" id="container" onchange="Formulario()">
+            <h4>DADOS PESSOAIS</h4>
+            <hr>
+            <br>
+        </div>        
+         <fieldset> 
+                    <div class="flex-container1">
+                        <div>
+                            <label for="nome">Nome completo:</label>
+                            <label for="*" style="color: red;">* </label><br>
+                            <input type="text" name="nome" id="nome" size="60" maxlength="60" placeholder="Insira seu nome completo"  autofocus required/>
+                        </div>
+                
+                        <div>
+                            <label for="cargo">Cargo pretendido:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="text" id="cargo" name="cargo" size="50" maxlength="50" placeholder="Insira o cargo pretendido" autofocus required>
+                        </div>
+                    </div>
+  
+                    <div class="flex-container2">
+                        <div>
+                            <label for="nascimento">Data de nascimento</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="date" name="nascimento" id="nascimento size="8" maxlength="8" autofocus required>
+                        </div>
+
+                        <div>
+                            <label for="estadoc">Estado Civil</label><br>
+                            <select id="estadoc" name="estadoc"  >
+                            <option selected >Solteir@</option>
+                            <option> Casad@ </option>
+                            <option> Separad@</option>
+                            <option> Viuv@</option>
+                            <option> União Estável</option>
+                            </select><br>
+                        </div>
+
+                        <div>
+                            <label for="sexo">Sexo</label><br>
+                            <select id="sexo"  name="sexo">
+                                <option selected="selected"> Feminino </option>
+                                <option> Masculino</option>
+                                <option> Prefiro não informar</option>
+                                <option> Outros </option>
+                            </select><br>
+                        </div>
+                    </div>
+
+                    <div class="flex-container3">
+                        <div id="erroBlocoCEP">
+                            <label for="cep">CEP:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="number" min="8" name="cep" id="cep" class="invalidInput" size="10" maxlength="10" placeholder="Ex.: 00000-000" autofocus required />
+                            <span id="erroCEP" style="display: none;" role="alert">CEP inválido</span>
+                        </div>
+
+                        <div>
+                            <label for="end">logradouro:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="text" placeholder="Nome da rua, nº0." size="70" maxlength="70"  autofocus required>
+                        </div>
+
+                        <div>
+                            <label for="bairro">Bairro:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="text" name="bairro" placeholder="Ex. Vila Mariana" size="50" maxlength="50" autofocus required>
+                        </div>
+                    </div>
+            
+                    <div class="flex-container4">
+                        <div>
+                            <label for="cidade">Cidade:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="text" name="cidade" placeholder="Ex. São Paulo" size="50" maxlength="50" autofocus required>
+                        </div>
+            
+                
+                        <div>
+                            <label for="uf">Estado</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <select id="uf"  required><br>
+                                <option selected="selected" value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+       
+                    <div class="flex-container5"> 
+                        <div>
+                            <label for="tel">Tel Fixo:</label><br>
+                            <input type="tel" name="tel" placeholder="Ex. (xx)xxxx-xxxx" size="50" maxlength="50"  autofocus>
+                    
+                        </div>
+
+                        <div>
+                            <label for="cel">Celular:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="cel" placeholder="Ex.: (00) 00000-0000" name="cel" size="50" maxlength="50" autofocus required>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="flex-container5">
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="email" placeholder="exemplo@exemplo.com" name="email"  autofocus required >
+                            
+                        </div>
+                    </div>
+
+            
+                <hr/>
+                <br>
+                <h4>DOCUMENTOS</h4>
+                <hr/>
+                <br>
+                    <div class="flex-container6">
+                        <div>
+                            <label for="id">Identidade:</label><br>
+                            <input type="input" name="id" placeholder="Ex. 00.000-000"  autofocus ><br>
+                        </div>
+
+                        <div id="erroBlocoCPF">
+                            <label for="cpf">CPF:</label>
+                            <label for="*" style="color: red;">*</label><br>
+                            <input type="input" class="invalidInput" placeholder="Ex.: 000.000.000-00" name="CPF"  autofocus required>
+                            <span id="erroCPF" style="display: none;" role="alert">CPF Inválido</span>
+                        </div>
+                        
+                        <div>
+                            Possui Veículo:<br><select name = "car" >
+                            <option selected="selected"> Sim </option>
+                            <option> Não</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            CNH:<br><select name="cnh" >
+                            <option selected="selected">CNH A </option>
+                            <option>CNH B</option>
+                            <option>CNH C</option>
+                            <option>CNH D</option>
+                            <option>CNH E</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr>
+                <br>
+                <div><button class="buttonInput" type="submit" id="enviar" onclick="criarCandidato()">ENVIAR</button></div>
+        </form>
+
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+<script src="script.js"></script>
+
+    <div class="footer">
+        <p>
+            Todos os campos marcados com <label for="*" style="color: red;">*</label> são obrigatórios.
+        </p>
+    </div>
+</html>

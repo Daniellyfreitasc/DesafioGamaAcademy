@@ -1,0 +1,167 @@
+* {
+    margin-top: 2px;
+    color: rgb(35, 26, 88);
+        font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+#logo{
+    position: static;
+}
+body{
+    background-image: url(v960-ning-01.jpg);
+    justify-content:space-around;
+    
+    
+}
+header {
+    display: flex; 
+    justify-content:space-around;
+    width: 99%;
+    padding: 7px; 
+    margin-bottom: 10px;    
+    margin-top: 0px;
+    margin-left: 0px;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 170%;
+}
+
+h3 {
+    text-align: center;
+
+    font-size: 140%;
+}
+
+h4 {
+    text-align: center;
+    font-size: 150%;
+}
+fieldset{
+    border: none;
+}
+form {
+    border: 2px solid rgb(35, 26, 88);
+    border-radius: 5px;
+    font-size: 80%;
+   
+}
+.flex-container1 {
+    display: flex; 
+    justify-content: left;
+}
+
+.flex-container1 div {
+    margin: 5px;
+}
+
+.flex-container2 {
+    display: flex; 
+    justify-content: left;
+}
+
+.flex-container2 div {
+    margin: 5px;
+}
+
+.flex-container3 {
+    display: flex;  
+    justify-content: left;
+}
+
+.flex-container3 div {
+    margin: 5px;
+}
+
+.flex-container4 {
+    display: flex;  
+    justify-content: left;
+}
+
+.flex-container4 div {
+    margin: 5px;
+}
+
+.flex-container5 {
+    display: flex;  
+    justify-content: left;
+}
+
+.flex-container5a div {
+    margin: 5px;
+}
+
+.flex-container6 {
+    display: flex;  
+    justify-content: left;
+}
+
+.flex-container6 div {
+    margin: 5px;
+}
+
+.flex-container7 {
+    display: flex;  
+    justify-content: left;
+}
+
+.button {
+    display: inline-flex;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:white;
+    background-color: rgb(245, 35, 122);
+    border: none;
+    border-radius: 25px;
+    margin-left: 155px;
+}
+  
+.button:hover {
+    background-color:rgb(245, 35, 122);
+    color: rgb(38, 32, 90);
+}
+
+.button:active {
+    background-color:rgb(218, 105, 152);
+    transform: translateY(4px);
+}
+
+.buttonInput {
+    display: inline-flex;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:black;
+    background-color: rgb(245, 35, 122);
+    border: none;
+    border-radius: 25px;
+}
+  
+.buttonInput:hover {
+    background-color:rgb(245, 35, 122);
+    color: white;
+}
+
+.buttonInput:active {
+    background-color:rgb(245, 35, 122);
+    transform: translateY(4px);
+} 
+.footer{
+    background-color: rgb(235, 126, 198);
+    border-radius: 5%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "BackEnd",
+        "description": "Essa é a API do projeto GamaExperience",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "Ambiente de desenvolvimento"
+
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "sumary": "Cadastro de candidato",
+                "description": "Cadastro de Banco de Talentos",
+                "tags": [
+                    "candidate"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nome": {
+                                        "type": "String"
+                                    },
+                                    "cargo": {
+                                        "type":"String"
+                                    },
+                                    "nascimento": {
+                                        "type": "String"
+                                    },
+                                    "sexo": {
+                                        "type": "String"
+                                    },
+                                    "cep": {
+                                        "type": "Number"
+                                    },
+                                    "end": {
+                                        "type": "String"
+                                    },
+                                    "bairro": {
+                                        "type": "String"
+                                    },
+                                    "cidade": {
+                                        "type": "String"
+                                    },
+                                    "uf": {
+                                        "type": "String"
+                                    },
+                                    "tel": {
+                                        "type": "Number"
+                                    },
+                                    "cel": {
+                                        "type": "Number"
+                                    },
+                                    "email": {
+                                        "type": "String"
+                                    },
+                                    "id": {
+                                        "type": "Number"
+                                    },
+                                    "cpf": {
+                                        "type": "Number"
+                                    },
+                                    "car": {
+                                        "type": "String"
+                                    },
+                                    "cnh": {
+                                        "type": "String"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "Primeiro": {
+                                    "value": {
+                                        "nome": "Danielly Freitas",
+                                        "cargo": "Programadora",
+                                        "nascimento": "15/06/1993",
+                                        "estadoc": "solteir@",
+                                        "sexo": "Feminino",
+                                        "cep": "37130199",
+                                        "end": "Avenida Governador Valadares, 438-B",
+                                        "bairro": "Centro",
+                                        "cidade": "Alfenas",
+                                        "uf": "Minas Gerais",
+                                        "tel": " ",
+                                        "cel": "35988376080",
+                                        "email": "daniellyfreitasc@hotmail.com",
+                                        "id": "58587698",
+                                        "cpf": "55496848796",
+                                        "car": " ",
+                                        "cnh": "B"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
